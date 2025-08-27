@@ -115,7 +115,7 @@ export function ResponseSchema(
       const reference: ReferenceObject = {
         $ref: `#/components/schemas/${responseSchemaName}`,
       }
-      const schema: SchemaObject = isArray
+      const schema: SchemaObject | ReferenceObject = isArray
         ? { items: reference, type: 'array' }
         : reference
       const responses: ResponsesObject = {
