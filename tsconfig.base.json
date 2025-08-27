@@ -1,0 +1,123 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
+    "paths": {
+      "routing-controllers": [
+        "lib/routing-controllers/src"
+      ],
+      "routing-controllers/*": [
+        "lib/routing-controllers/src/*"
+      ],
+      "@pictaccio/grpc-service-contracts/*": [
+        "dist/lib/grpc-service-contracts/*"
+      ],
+      "@pictaccio/image-service/*": [
+        "app/image-service/*"
+      ],
+      "@pictaccio/admin-api": [
+        "app/admin-api/src/entry.js"
+      ],
+      "@pictaccio/admin-api/*": [
+        "app/admin-api/src/*"
+      ],
+      "@pictaccio/shared/*": [
+        "lib/shared/*"
+      ],
+      "routing-controllers-openapi": [
+        "lib/routing-controllers-openapi/src"
+      ],
+      "class-validator": [
+        "lib/class-validator/src/index.js"
+      ],
+      "class-validator/*": [
+        "lib/class-validator/*"
+      ],
+      "@loufa/loufairy-server": [
+        "./lib/loufairy-server"
+      ],
+      "@loufa/loufairy-server/*": [
+        "lib/loufairy-server/src/*"
+      ],
+      "@pictaccio/admin-gui/*": [
+        "app/admin-gui/*"
+      ],
+      "@pictaccio/print-service/*": [
+        "app/print-service/*"
+      ],
+    }
+  },
+  "references": [
+    {
+      "path": "lib/class-validator/tsconfig.json"
+    },
+    {
+      "path": "lib/routing-controllers/tsconfig.json"
+    },
+    {
+      "path": "lib/loufairy-client/tsconfig.json"
+    },
+    {
+      "path": "lib/loufairy/tsconfig.json"
+    },
+    {
+      "path": "lib/loufairy-server/tsconfig.json"
+    },
+    {
+      "path": "lib/shared/tsconfig.json"
+    },
+    {
+      "path": "app/image-service/tsconfig.json"
+    },
+    {
+      "path": "app/print-service/tsconfig.json"
+    },
+    {
+      "path": "tool/clickable-paths/tsconfig.json"
+    },
+    {
+      "path": "app/admin-api/tsconfig.json"
+    },
+    {
+      "path": "app/admin-gui/tsconfig.json"
+    }
+  ],
+  "exclude": [
+    "node_modules",
+    "tmp",
+  ],
+  "include": [
+    "node_modules/entities/lib/*.d.ts",
+    "lib/loufairy-server/src/**/*",
+    "lib/shared/src/**/*",
+    "lib/class-validator/src/**/*",
+    "lib/loufairy-client/src/**/*",
+    "lib/loufairy/src/**/*",
+    "lib/routing-controllers/src/**/*",
+    "app/image-service/src/**/*",
+    "app/print-service/src/**/*",
+    "app/admin-api/src/**/*",
+  ]
+}
