@@ -4,6 +4,7 @@
     "moduleResolution": "node",
     "module": "commonjs",
     "importHelpers": true,
+    "declaration": true,
     "inlineSourceMap": true,
     "listFiles": false,
     "traceResolution": false,
